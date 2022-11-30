@@ -39,7 +39,7 @@ const Work = () => {
         My <span>Portfolio</span> section
       </h2>
       <div className="app__work-filter">
-        {["React Projects", "Frontend Mentor", "All"].map((item, index) => (
+        {["React Projects", "Work Projects", "All"].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -79,16 +79,18 @@ const Work = () => {
                     <AiFillEye />
                   </motion.div>
                 </a>
-                <a href={work.codeLink} target="_blank" rel="noreferrer">
-                  <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
-                    transition={{ duration: 0.25 }}
-                    className="app__flex"
-                  >
-                    <AiFillGithub />
-                  </motion.div>
-                </a>
+                {work.codeLink && (
+                  <a href={work.codeLink} target="_blank" rel="noreferrer">
+                    <motion.div
+                      whileInView={{ scale: [0, 1] }}
+                      whileHover={{ scale: [1, 0.9] }}
+                      transition={{ duration: 0.25 }}
+                      className="app__flex"
+                    >
+                      <AiFillGithub />
+                    </motion.div>
+                  </a>
+                )}
               </motion.div>
             </div>
             <div className="app__work-content app__flex">
