@@ -2,6 +2,7 @@ import { useState } from "react"
 import { images } from "../../constants"
 import { AppWrap, MotionWrap } from "../../wrapper"
 import { client } from "../../client"
+import pdf from "../../assets/cv jlmm eng.pdf"
 import "./Footer.scss"
 
 const Footer = () => {
@@ -50,6 +51,12 @@ const Footer = () => {
           <img src={images.mobile} alt="email" />
           <a href="tel:+523323773263" className="p-text">
             +52 33 2377 3263
+          </a>
+        </div>
+        <div className="app__footer-card">
+          <img src={images.cv} alt="email" />
+          <a href={pdf} className="p-text" target="_blank">
+            Download CV
           </a>
         </div>
       </div>

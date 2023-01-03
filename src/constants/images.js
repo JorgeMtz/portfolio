@@ -1,5 +1,6 @@
 import email from "../assets/email.png"
 import mobile from "../assets/mobile.png"
+import cv from "../assets/cv.png"
 import api from "../assets/api.png"
 import cpp from "../assets/cpp.png"
 import css from "../assets/css.png"
@@ -39,6 +40,7 @@ import spotify from "../assets/spotify.png"
 export default {
   email,
   mobile,
+  cv,
   api,
   cpp,
   css,
